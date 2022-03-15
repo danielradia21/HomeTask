@@ -1,0 +1,17 @@
+// cmps
+@import 'components/edit-modal';
+@import 'components/main-section';
+
+// pages
+@import 'pages/home';
+
+html {
+    height: 100%;
+}
+body {
+    background-color: #b2e5f8;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}

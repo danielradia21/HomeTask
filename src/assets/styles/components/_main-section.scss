@@ -1,0 +1,66 @@
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.actions {
+    button {
+        margin: 5px 5px;
+    }
+}
+button {
+    border-radius: 6px;
+    padding: 10px;
+}
+.add-btn {
+    margin-top: 20px;
+    padding: 15px 40px;
+    border: none;
+    background-color: #169116;
+    color: white;
+    cursor: pointer;
+    transform: scale(1);
+    &:hover {
+        transform: scale(1);
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+    transition: all 0.2s;
+}
+
+.update-btn {
+    margin: 20px 0px;
+
+    border: none;
+    background-color: #1c91c7;
+    color: white;
+    cursor: pointer;
+    transform: scale(1);
+    &:hover {
+        transform: scale(1);
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+    transition: all 0.2s;
+}
+
+.remove-btn {
+    margin: 20px 0px;
+
+    border: none;
+    color: white;
+    background-color: #ff0000bf;
+    cursor: pointer;
+    transform: scale(1);
+    &:hover {
+        transform: scale(1);
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+    transition: all 0.2s;
+}

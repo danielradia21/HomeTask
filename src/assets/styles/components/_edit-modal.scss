@@ -1,0 +1,18 @@
+.edit-modal {
+    background: white;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 50%;
+    transform: translate(50%, 30%);
+    @media screen and (max-width: 700px) {
+        width: 350px;
+        padding: 20px;
+        height: 450px;
+        transform: translate(50%, 35%);
+    }
+}
