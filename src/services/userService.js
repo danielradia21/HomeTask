@@ -11,8 +11,10 @@ export const userService = {
 async function getUsers() {
     try {
         let users = await storageService.query('user');
-        if (!users.length)
+        let check = await storageService.checkInStorage();
+        if (check === false) {
             return await storageService.postMany(STORAGE_KEY, regularUsers);
+        }
         return users;
     } catch (err) {
         console.log('Had error on userService: GET_USERS', err);

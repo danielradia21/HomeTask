@@ -5,7 +5,8 @@ export const storageService = {
     put,
     remove,
     postMany,
-    saveToStorge,
+    saveToStorage,
+    checkInStorage,
 };
 
 function query(entityType, delay = 1200) {
@@ -18,6 +19,11 @@ function query(entityType, delay = 1200) {
         }, delay);
     });
     // return Promise.resolve(entities)
+}
+
+async function checkInStorage() {
+    if (localStorage.key(0)) return true;
+    else return false;
 }
 
 function get(entityType, entityId) {
@@ -67,6 +73,6 @@ function postMany(entityType, newEntities) {
     });
 }
 
-function saveToStorge(entityType, entities) {
+function saveToStorage(entityType, entities) {
     return localStorage.setItem(entityType, JSON.stringify(entities));
 }

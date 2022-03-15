@@ -9,7 +9,7 @@ import { Table, Thead, Tbody, Tr, Th, Td } from 'react-super-responsive-table';
 import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css';
 
 export function Home() {
-    const [users, setUsers] = useState([]);
+    const [users, setUsers] = useState(null);
     const [editOpen, setEditOpen] = useState(false);
     const [userToUpdate, setUserToUpdate] = useState(null);
     const [currMsg, setCurrMsg] = useState(null);
@@ -72,7 +72,7 @@ export function Home() {
         return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
     });
 
-    if (!users.length) return <div className="loader"></div>;
+    if (!users) return <div className="loader"></div>;
     return (
         <section className="main-section">
             <h1>Users Table</h1>
