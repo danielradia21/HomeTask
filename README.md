@@ -1,6 +1,30 @@
-# Getting Started with Create React App
+## Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[https://hometask02.herokuapp.com/](https://hometask02.herokuapp.com/).
+
+## Features
+1. Add a new user by clicking on `Add Field` Button. When you entering values into the inputs, you need to follow buy the following authentication.
+   * ID - Need to be a number between 8 - 12 characters. - `Need to be unique`.
+   * First Name - Maximum 15 characters, only letters.
+   * Last Name - Maximum 15 characters, only letters.
+ 
+2. Update user by by clicking on `Update` Button. When you entering values into the inputs, you need to follow buy the following authentication.
+   * ID - **`Cannot be change`**.
+   * First Name - Maximum 15 characters, only letters.
+   * Last Name - Maximum 15 characters, only letters.
+
+3. Remove user by by clicking on `Remove` Button.
+   
+   
+## Technologies
+1. React js 
+2. React Hooks 
+3. Node.js 
+4. React material UI (Snackbar, Modal)
+5. React-super-responsive-table
+6. Formik
+7. Sass
+8. Heroku
 
 ## Available Scripts
 
